@@ -19,6 +19,21 @@ mongoose
   .then(con => {
     console.log('DB connection succesfull');
   });
+
+// const newTour = new Tour({
+//   name: 'kaptai river',
+//   price: 7000
+// });
+
+// newTour
+//   .save()
+//   .then(doc => {
+//     console.log(doc);
+//   })
+//   .catch(err => {
+//     console.log(err);
+//   });
+
 const Port = process.env.PORT | 3000;
 
 app.listen(Port, () => {
